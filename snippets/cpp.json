@@ -221,5 +221,36 @@
       "}"
     ],
     "description": "A standard main function for a C++ program"
+  },
+  "bp": {
+    "prefix": "bp",
+    "body": [
+      "#include \"bits/stdc++.h\"",
+      "#ifdef _LOCAL_DEBUG",
+      "#include \"getem.hpp\"",
+      "#endif",
+      "#pragma GCC optimize(\"Ofast,O3,no-stack-protector,unroll-loops,fast-math\")",
+      "#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma\")\n",
+
+      "using namespace std;\n",
+
+      "int main() {",
+        "\tstd::ios_base::sync_with_stdio(false);",
+        "\tstd::cin.tie(nullptr);",
+      "#ifdef _LOCAL_DEBUG",
+        "\tfreopen(\"input.txt\", \"r\", stdin);",
+        "\tfreopen(\"output.txt\", \"w\", stdout);",
+      "#endif\n",
+
+        "\t{\n",
+
+          "\t\t$1\n",
+
+        "\t}\n",
+
+        "\treturn 0;",
+      "}"
+    ],
+    "description": "Boilerplate code for competitive programming"
   }
 }
