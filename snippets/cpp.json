@@ -19,12 +19,12 @@
   },
   "do": {
     "prefix": "do",
-    "body": ["do {", "\t$1", "} while($2);"],
+    "body": ["do {", "\t$0", "} while($1);"],
     "description": "Code snippet for do...while loop"
   },
   "while": {
     "prefix": "while",
-    "body": ["while ($1) {", "\t$2", "}"],
+    "body": ["while ($1) {", "\t$0", "}"],
     "description": ""
   },
   "foreach": {
@@ -71,7 +71,7 @@
       "\t~$1();",
       "",
       "private:",
-      "\t$2",
+      "\t$0",
       "};",
       "",
       "$1::$1()",
@@ -98,7 +98,7 @@
       "\t~$1() = default;",
       "",
       "private:",
-      "\t$2",
+      "\t$0",
       "};"
     ],
     "description": "Code snippet for class with inline constructor/destructor"
@@ -140,20 +140,19 @@
   "try": {
     "prefix": "try",
     "body": [
-      "try",
+      "try {",
+      "\t$0",
+      "}",
+      "catch (${1:const std::exception&})",
       "{",
       "\t",
-      "}",
-      "catch (const std::exception&)",
-      "{",
-      "\t$1",
       "}"
     ],
     "description": "Code snippet for try catch"
   },
   "union": {
     "prefix": "union",
-    "body": ["union ${1:MyUnion}", "{", "\t$0", "};"],
+    "body": ["union ${1:MyUnion} {", "\t$0", "};"],
     "description": "Code snippet for union"
   },
   "cout": {
@@ -216,7 +215,7 @@
     "body": [
       "int main (int argc, char *argv[])",
       "{",
-      "\t$1",
+      "\t$0",
       "\treturn 0;",
       "}"
     ],
@@ -244,7 +243,7 @@
 
         "\t{\n",
 
-          "\t\t$1\n",
+          "\t\t$0\n",
 
         "\t}\n",
 
