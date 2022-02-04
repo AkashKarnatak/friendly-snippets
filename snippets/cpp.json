@@ -197,12 +197,12 @@
   },
   "#inc": {
     "prefix": "#inc",
-    "body": ["#include \"$0\""],
+    "body": ["#include \"$1\""],
     "description": "Code snippet for #include \" \""
   },
   "#inc<": {
     "prefix": "#inc<",
-    "body": ["#include <$0>"],
+    "body": ["#include <$1>"],
     "description": "Code snippet for #include < >"
   },
   "#def": {
