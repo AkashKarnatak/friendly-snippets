@@ -100,8 +100,7 @@
   "Main function template": {
     "prefix": "main",
     "body": [
-      "int main (int argc, char *argv[])",
-      "{",
+      "int main (int argc, char **argv) {",
       "\t$0",
       "\treturn 0;",
       "}"
@@ -113,8 +112,7 @@
     "body": [
       "#include <stdio.h>",
       "",
-      "int main (int argc, char *argv[])",
-      "{",
+      "int main (int argc, char **argv) {",
       "\t$0",
       "\treturn 0;",
       "}"
@@ -127,8 +125,7 @@
       "#include <stdio.h>",
       "#include <stdlib.h>",
       "",
-      "int main (int argc, char *argv[])",
-      "{",
+      "int main (int argc, char **argv) {",
       "\t$0",
       "\treturn 0;",
       "}"
