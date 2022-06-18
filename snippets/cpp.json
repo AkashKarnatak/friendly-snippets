@@ -236,8 +236,8 @@
         "\tstd::ios_base::sync_with_stdio(false);",
         "\tstd::cin.tie(nullptr);",
       "#ifdef _LOCAL_DEBUG",
-        "\tfreopen(\"input.txt\", \"r\", stdin);",
-        "\tfreopen(\"output.txt\", \"w\", stdout);",
+        "\tfreopen(\"./.cvim_cache/input.txt\", \"r\", stdin);",
+        "\tfreopen(\"./.cvim_cache/output.txt\", \"w\", stdout);",
       "#endif\n",
 
         "\t{\n",
