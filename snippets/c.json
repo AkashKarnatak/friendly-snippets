@@ -261,5 +261,15 @@
       "free($2);"
     ],
     "description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+  },
+  "Exit with failure": {
+    "prefix": "exfa",
+    "body": ["exit(EXIT_FAILURE);"],
+    "description": "Exit with failure"
+  },
+  "Exit with success": {
+    "prefix": "exsu",
+    "body": ["exit(EXIT_SUCCESS);"],
+    "description": "Exit with success"
   }
 }
