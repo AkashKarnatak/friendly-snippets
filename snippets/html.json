@@ -388,8 +388,8 @@
         "description": "HTML - Defines an html document",
         "scope": "text.html"
     },
-    "html5": {
-        "prefix": "html5",
+    "!": {
+        "prefix": "!",
         "body": [
             "<!DOCTYPE html>",
             "<html lang=\"${1:en}\">",
@@ -709,7 +709,7 @@
         "prefix": "style",
         "body": [
             "<style>",
-            "$1",
+            "\t$1",
             "</style>"
         ],
         "description": "HTML - Defines a style definition",
@@ -779,7 +779,7 @@
         "prefix": "thead",
         "body": [
             "<thead>",
-            "$1",
+            "\t$1",
             "</thead>"
         ],
         "description": "HTML - Defines a table head",
