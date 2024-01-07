@@ -114,6 +114,11 @@
         "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}",
         "description": "Snippet for if else"
     },
+    "if err != nil {": {
+        "prefix": "ifer",
+        "body": "if err != nil {\n\tpanic(err)\n}",
+        "description": "Snippet for if err != nil"
+    },
     "if err != nil": {
         "prefix": "ir",
         "body": "if err != nil {\n\t${1:return ${2:nil, }${3:err}}\n}",
